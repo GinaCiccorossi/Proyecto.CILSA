@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto final</title>
+    <link rel="shortcut icon" href="img/gira.png">
+    <link rel="stylesheet" href="estilo.css"> 
+    
+</head>
+
+
+<body>
+
+    
+ <div class="sol">
+ 
+   <img  src="img/amarillo.jpg">    
+    <img src="img/circulo.jpg">
+    <img  src="img/marron.jpg">
+    <img src="img/w.jpg">
+ </div>
+
+    <div class="contenedor">
+
+    
+         
+        <div id="infopag"></div>
+
+        
+        <div >
+            <form action="#">
+
+
+                <div >
+                    <h3>Girasol</h3>
+                    <p>Una de las particularidades más destacadas de esta especie, razón por la cual se llaman así, es su capacidad para seguir la ruta del sol, es decir, giran en busca de la luz solar. 
+                        El girasol se mueve siguiente este astro y orienta sus hojas, sus tallos y sus flores hacia él. <a href="https://es.wikipedia.org/wiki/Helianthus_annuus"> (Para más información vista esta página) </a></p> 
+                    
+                    <h4>Ultimos Visitantes</h4>
+                    <h5 id="primerParrafo"></h5>
+                    <h6>Si quieres anotarte a nuestro grupo, presione:"Añadir su Nombre"</h6>
+                    <ul id="alumnos">
+                        <li>Sofía López</li>
+                        <li>Lucía Martínez</li>
+                        <li>Pablo Pérez</li>
+                        <li>Sergio Romero</li>
+                        <li>Catalina Díaz</li>
+                    </ul>
+                    
+                    <input type="button" class="button" id="bot1"  value="Añadir su Nombre" onclick="añadirNombre();">
+                    <input type="button" class="button" id="bot2" style="display: none;" value="Retirar su Nombre" onclick="retirarNombre();">
+        
+                    <hr color="yellow" size="3">
+                    
+                    <h3>Información extra</h3>
+                    
+                    <p id="texto">Las semillas de girasol, también llamadas pipas, son un alimento rico en minerales como el fósforo, el potasio, el magnesio y el calcio, que aportan beneficios para la salud. Suelen ser consumidas después de un ligero tostado y, en algunos casos, con un toque de sal.<span id="adicional" class="oculto"> De la semilla de girasol se pueden obtener diversos productos gracias a su alto porcentaje de aceite. Por ejemplo, el aceite de girasol para cocinar, alimento para el ganado y formar parte de los ingredientes de algunos cosméticos y detergentes.</span></p>
+                    
+                    <a id="enlace" href="#" onclick="muestra(); return false;">Seguir leyendo.</a>
+                    <a id="leerMenos" class="oculto" onclick="ocultarSpan();">Leer menos.</a>   
+                    <br>
+                    <br>
+                    <br>
+        
+                    <div class="b">
+                        <br>
+                
+                        <h4 class="a">Busqueda del tesoro</h4>
+                    </b>
+                
+                     <div class="tesoro">
+                            
+                        <img src="img/campo.jpg" width="400" height="400" id="map" draggable="false">
+                        <p class="e" id="distance"></p>
+                        
+                        
+                     </div>
+                     
+                     </div>
+        
+                </div>
+
+                
+    
+                <div class="clear"></div>
+
+              
+                <fieldset>
+                    <legend>Complete el formulario</legend>
+                    
+                        <div>
+                            <h5>Validación de información: </h5>
+                        </div>
+                        <form id="formulario" action="procesar.php" method="">
+                
+                            <div>
+                                <label for="usuario">Nombre de usuario</label>
+                                <input id="usuario" type="text">
+                                <p></p>                
+                            </div>
+                
+                            <div>
+                                <label for="email">E-mail</label>
+                                <input id="email" type="email">
+                                <p></p>                
+                            </div>
+                
+                            <div>
+                                <label for="pass">Password</label>
+                                <input id="pass" type="password">
+                                <p></p>                
+                            </div>
+                
+                            <div>
+                                <label for="passConfirma">Confirmar Password</label>
+                                <input id="passConfirma" type="password">
+                                <p></p>                
+                            </div>
+                
+                            <button class="boton">Enviar</button>
+                        </form>
+                   
+                    
+                </fieldset>
+
+        
+                <fieldset>
+                    <legend > Seleccionar provincia: </legend>
+
+                    <div class="abc">
+                    <input type="radio" name="ori" value="Buenos Aires" onchange="pro(this.value)"/> Buenos Aires<br />
+                    <input type="radio" name="ori" value="Santa Fe" onchange="pro(this.value)" /> Santa Fe<br />
+                    <input type="radio" name="ori" value="Córdoba" onchange="pro(this.value)" /> Córdoba<br />
+                    <input type="radio" name="ori" value="Mendoza" onchange="pro(this.value)" /> Mendoza<br />
+                    <input type="radio" name="ori" value="Formosa" onchange="pro(this.value)" /> Formosa<br />
+                    <input type="radio" name="ori" value="Tierra del Fuego" onchange="pro(this.value)" /> Tierra del Fuego<br />
+                    <input type="radio" name="ori" value="San Luis" onchange="pro(this.value)" /> San Luis<br />
+                    <input type="radio" name="orib" value="Otra" onchange="prob(this.value)" /> Otra<br />
+                    </div>
+            
+                </fieldset>
+        
+                <fieldset>
+                    <legend> Comparar</legend>
+                    <h5>Ingrese dos números:</h5>
+                    <p>
+                        <label for="n1">Primer número</label>
+                        <input type="number" id="n1" name="n1">
+                    </p>
+                    <p>
+                        <label for="n2">Segundo número</label>
+                        <input type="text" id="n2" name="n2" required/>
+                    </p>
+                    <p>
+                        <input class="boton" type="button" name="botCom" value="Comparar" onclick="Compara()" />
+                    </p>
+                </fieldset>
+        
+                <fieldset>
+                    <legend>Sumar dos valores</legend>
+                    <h5>Ingrese dos números:</h5>
+                    <p>
+                        <label for="v1">Primer número: </label>
+                        <input type="text" id="v1" name="v1" />
+                    </p>
+                    <p>
+                        <label for="v2">Segundo número: </label>
+                        <input type="text" id="v2" name="v2" />
+                    </p>
+                    <p>
+                        <input class="boton" type="button" name="botSum" value="Sumar" onclick="Suma()" />
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend> Restar dos valores </legend>
+                    <h5>Ingrese dos números:</h5>
+                    <p>
+                        <label for="v1">Primer número: </label>
+                        <input type="text" id="r1" name="r1" />
+                    </p>
+                    <p>
+                        <label for="v2">Segundo número: </label>
+                        <input type="text" id="r2" name="r2" />
+                    </p>
+                    <p>
+                        <input class="boton" type="button" name="botRes" value="Restar" onclick="Resta()" />
+                    </p>
+                </fieldset>
+            </div>
+            
+            
+            </form>
+        </div>
+        
+
+    </div>
+
+  <div>
+    
+ <a href="https://www.youtube.com/watch?v=mNNwmUQaBik"><img class=ult src="img/click.png" a>
+    
+
+</div>
+  <script src="principal.js"></script>   
+  <script  src="helper.js"></script>
+  <script src="game.js"></script> 
+
+</body>
+</html>

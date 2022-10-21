@@ -1,0 +1,215 @@
+
+.ult{
+    width:400px;
+    height: 250px; 
+    display:block;
+    margin:auto
+}
+
+.e{
+    font-size: 15px;
+}
+.sol {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+
+ .sol img{
+    width:200px;
+    height:150px;
+margin: 10px;
+border-radius:8px;
+
+
+
+ }
+
+
+ .abc {
+    font-size: 16px;
+    margin-bottom: 40px;
+    justify-content: center;
+
+}
+
+
+h3{
+    text-align: center;
+    font-size: 30px;
+}
+h6{
+    text-align: center;
+    font-size: x-large;
+
+}
+.cont{height: auto;
+    margin: 40px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px;
+    padding: 40px 60px;
+    float:center;}
+
+body {
+    font-family: "Open Sans";
+    background-color: #fffddd;
+}
+
+.contenedor{background-color: rgb(230, 226, 173);
+    border-radius: 10px;
+    width: 1200px;
+    margin: 15px auto;
+    padding: 20px;
+    
+}
+
+
+    
+ .contenedor2{ 
+    width:200px; 
+    margin: auto;
+
+    }
+
+
+
+
+    fieldset {border-radius: 20px;
+        padding: 15px;
+        background: rgb(230, 224, 173);
+        margin: 15px 0;
+        font: italic 12px arial;
+        box-shadow: 3px 3px 3px;
+        text-align: center;
+    }
+    legend { padding: 5px;
+        margin-left: 40px;
+        background: rgb(230, 229, 173);
+        border-radius: 5px;
+        text-align: left;
+        font-size:15px;
+    }
+    span {font-weight:bold;
+        font-style: normal;
+        font-size: 16px;
+    }
+    h3{margin: 20px 0px;}
+    h5 {text-align: center;
+        font: bold 15px verdana;
+        margin-bottom: 10px;
+    }
+    p { margin: 5px auto; 
+        text-align: center;
+        width: 100%;
+        font-size: 20px;
+    }
+    
+    p label {width: 110px;
+        text-align: right;
+        margin-right: 0;
+        display: inline-block;
+        font-size:15px;
+    }
+    p input {margin-left: 0px;
+        width: 100px;
+    }
+    .boton{font: bold 15px arial;
+        background: white;
+        border-radius: 5px;
+        padding: 5px ;
+        margin-top: 10px;
+        box-shadow: 5px 5px 5px;
+        font-size:15px;
+
+    }
+    input[type="button"]:hover {box-shadow: 2px 2px 2px;}
+
+
+.oculto{
+    display:none;
+}
+
+.visible{
+    display:inline;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+a:hover {
+    color:  rgb(255, 255, 255);
+    background-color: #b29c22;
+}
+
+#infopag {
+    background-color: #f2dd1d;
+    border-radius: 10px;
+    text-align: center;
+    display: block;
+    padding: 20px;
+    margin: 20px 0px;
+    font-size: 25px;
+    border: thin solid rgb(117, 115, 13); 
+}
+
+.button {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-family: "ROBOTO";
+    background-color: #fcf049;
+    color: rgb(255, 255, 255);
+    border: 0;
+    border: 1px solid #000;
+    border-radius: 6px;
+    cursor: pointer; 
+    margin: 20px 0px;
+}
+
+.button:last-of-type{
+    background-color: #000000;
+}
+
+.clear{clear: both  ;}
+
+
+
+.tesoro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+ }
+
+ .tesoro img{
+    width:400px;
+    height:400px;
+margin: 20px;
+border:2px solid rgb(179, 147, 42);
+box-shadow: 0 0 0 2px;
+border-radius: 15px;
+
+
+ }
+
+.a {
+font-size:30px;
+text-align: center;
+color: #030303;
+}
+
+.b {
+    background:rgb(230, 229, 173) ;
+    width:580px;
+    height: 650px;
+    margin-left:60px;
+    margin: right 20px;;
+    border-radius: 15px;
+    border-color: #b28422;
+    box-shadow: 5px 5px 15px black;
+    
+    
+}
+
